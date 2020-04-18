@@ -112,7 +112,7 @@ ul {
   left: 9rem;
   height: 75%;
   width: 75%;
-  background: url(/images/paper-write.jpg) no-repeat center top/cover;
+  background: url(../images/paper-write.jpg) no-repeat center top/cover;
   transform: rotate(8deg);
   z-index: -2;
   box-shadow: 4px 4px 8px 5px rgba(0, 0, 0, 0.2);
@@ -180,7 +180,7 @@ ul {
   top: 0;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
-  overflow: scroll; /* Scroll if needed*/
+  overflow: hidden; /* Scroll if needed*/
   background-color: rgb(0, 0, 0); /* Fallback color */
   background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
 }
@@ -213,7 +213,7 @@ ul {
 .close {
   position: fixed;
   top: 0;
-  right: 3px;
+  right: 15px;
   color: #f1f1f1;
   font-size: 30px;
   font-weight: bold;
@@ -307,6 +307,10 @@ ul {
 
   p {
     font-size: 2.5rem;
+  }
+
+  .close {
+    right: 5px;
   }
 }
 
