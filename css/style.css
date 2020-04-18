@@ -13,6 +13,7 @@ a {
 }
 
 a:hover {
+  -webkit-transition: all 0.6s;
   transition: all 0.6s;
   text-decoration: underline;
   color: #222;
@@ -76,8 +77,10 @@ ul {
 }
 
 .navbar__content {
+  display: -webkit-box;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+          justify-content: center;
 }
 
 #navbar a {
@@ -90,16 +93,22 @@ ul {
 
 /* Header */
 #header {
+  display: -webkit-box;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
   text-align: center;
   height: 100vh;
 }
 
 .header__text-box {
+  display: -webkit-box;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
   position: relative;
   z-index: 1;
   margin-top: 10em;
@@ -113,14 +122,18 @@ ul {
   height: 75%;
   width: 75%;
   background: url(../images/paper-write.jpg) no-repeat center top/cover;
-  transform: rotate(8deg);
+  -webkit-transform: rotate(8deg);
+          transform: rotate(8deg);
   z-index: -2;
   box-shadow: 4px 4px 8px 5px rgba(0, 0, 0, 0.2);
 }
 
 .header__img-box {
+  display: -webkit-box;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
 }
 
 .header__img-box img {
@@ -144,9 +157,12 @@ ul {
 
 /*  Image gallery container */
 .card-box {
+  display: -webkit-box;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
   flex-wrap: wrap;
 }
 
@@ -161,6 +177,7 @@ ul {
 .pics {
   border-radius: 5px;
   cursor: pointer;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
   height: 207px;
   width: 276px;
@@ -196,16 +213,31 @@ ul {
 
 /* Add Animation */
 .modal-content {
-  animation-name: zoom;
-  animation-duration: 0.6s;
+  -webkit-animation-name: zoom;
+          animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }
 
 @keyframes zoom {
   from {
-    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
   }
   to {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
@@ -217,6 +249,7 @@ ul {
   color: #f1f1f1;
   font-size: 30px;
   font-weight: bold;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
   z-index: 99;
 }
@@ -250,6 +283,7 @@ ul {
 }
 
 #footer a:hover {
+  -webkit-transition: all 0.6s;
   transition: all 0.6s;
   text-decoration: underline;
 }
@@ -296,7 +330,8 @@ ul {
   }
 
   .header__img-box {
-    justify-content: center;
+    -webkit-box-pack: center;
+            justify-content: center;
   }
 
   .header__img-box img {
