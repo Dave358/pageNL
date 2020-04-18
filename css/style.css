@@ -10,6 +10,7 @@ a {
   text-transform: uppercase;
   display: inline-block;
   color: #444;
+  border: none;
 }
 
 a:hover {
@@ -80,7 +81,7 @@ ul {
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 #navbar a {
@@ -96,9 +97,9 @@ ul {
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: center;
-          justify-content: center;
+  justify-content: center;
   -webkit-box-align: center;
-          align-items: center;
+  align-items: center;
   text-align: center;
   height: 100vh;
 }
@@ -108,7 +109,7 @@ ul {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-          flex-direction: column;
+  flex-direction: column;
   position: relative;
   z-index: 1;
   margin-top: 10em;
@@ -123,7 +124,7 @@ ul {
   width: 75%;
   background: url(../images/paper-write.jpg) no-repeat center top/cover;
   -webkit-transform: rotate(8deg);
-          transform: rotate(8deg);
+  transform: rotate(8deg);
   z-index: -2;
   box-shadow: 4px 4px 8px 5px rgba(0, 0, 0, 0.2);
 }
@@ -133,7 +134,7 @@ ul {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-          flex-direction: row;
+  flex-direction: row;
 }
 
 .header__img-box img {
@@ -160,9 +161,9 @@ ul {
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: center;
-          justify-content: center;
+  justify-content: center;
   -webkit-box-align: center;
-          align-items: center;
+  align-items: center;
   flex-wrap: wrap;
 }
 
@@ -214,30 +215,30 @@ ul {
 /* Add Animation */
 .modal-content {
   -webkit-animation-name: zoom;
-          animation-name: zoom;
+  animation-name: zoom;
   -webkit-animation-duration: 0.6s;
-          animation-duration: 0.6s;
+  animation-duration: 0.6s;
 }
 
 @-webkit-keyframes zoom {
   from {
     -webkit-transform: scale(0.8);
-            transform: scale(0.8);
+    transform: scale(0.8);
   }
   to {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
 }
 
 @keyframes zoom {
   from {
     -webkit-transform: scale(0.8);
-            transform: scale(0.8);
+    transform: scale(0.8);
   }
   to {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
 }
 
@@ -331,7 +332,7 @@ ul {
 
   .header__img-box {
     -webkit-box-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
 
   .header__img-box img {
